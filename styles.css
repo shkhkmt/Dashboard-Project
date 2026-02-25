@@ -45,11 +45,12 @@
 }
 
 .nav > h1 { 
-  font-size: 2rem;  
+  font-size: clamp(1rem, 2.5vw, 3rem);  
   font-weight: 700; 
   margin: 0.5rem 1rem; 
-  display: flex; 
-  flex-direction: row; 
+  display: grid;  
+  grid-template-columns: 0.5fr 2fr; 
+  align-items: anchor-center; 
 }
 
 .nav > h1 > img { 
@@ -70,7 +71,7 @@ div > div > div > ul > li > img {
 
 div > div > div > ul > li { 
   list-style: none; 
-  font-size: 1.5rem; 
+  font-size: clamp(.5rem, 1.5rem, 2rem); 
   font-weight: 700; 
   display: flex; 
   flex-direction: row; 
@@ -145,8 +146,8 @@ div > div > div > ul > li {
   margin-right: 3rem; 
 }
 
-#user-name { 
-  font-size: 2rem; 
+.user-name { 
+  font-size: clamp(2rem, 2.5vw, 3rem); 
 } 
 
 #logo-lrg { 
